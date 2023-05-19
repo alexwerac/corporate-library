@@ -1,0 +1,36 @@
+.terms {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.terms__container {
+    display: flex;
+    flex-direction: column;
+    width: 825px;
+}
+
+.mar0 {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) { 
+    .terms__container {
+        display: flex;
+        flex-direction: column;
+        width: 640px;
+    }
+}
+
+@media only screen and (max-width: 320px) { 
+    .terms {
+        margin-bottom: 24px;
+    }
+
+    .terms__container {
+        display: flex;
+        flex-direction: column;
+        width: 288px;
+    }
+
+}

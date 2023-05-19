@@ -1,0 +1,220 @@
+.calendar__form {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 8px;
+    width: 256px;
+    min-height: 240px;
+    background: #FFFFFF;
+}
+
+.calendar__header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.calendar__button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.calendar__month__list {
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #A7A7A7;
+}
+
+.calendar__month__name {
+    margin-right: 4px;
+}
+
+.calendar__next {
+    margin-right: 12px;
+}
+
+.calendar__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.month__list {
+    box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    left: -4px;    
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-right: 30px;
+}
+
+.month {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #A7A7A7;
+}
+
+.calendar__days {
+    margin: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(7, 32px);
+    grid-template-rows: repeat(6, 32px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.days__ceil {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A7A7A7;
+    cursor: default;
+    user-select: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+
+.days__header {
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.enabled {
+    cursor: pointer;
+    color: #363636;
+}
+
+.selectedDay {
+    background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    border: none;
+}
+
+.selectedDay span {
+    background-image: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+    color: #fff !important;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+}
+
+.weekend {
+    width: 32px;
+    height: 32px;
+    background: rgb(254,235,234);
+    background-color: rgb(254,235,234);
+    border-radius: 50%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.weekend span {
+    background: rgb(254,235,234);
+    background-color: rgb(254,235,234);
+}
+
+.today span {
+    color:#F83600;
+}
+
+.booking__button {
+    margin-top: 32px;
+
+    cursor: pointer;
+    border: none;
+    width: 416px;
+    height: 52px;
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #fff;
+}
+
+.booking__button:disabled {
+    background: #EBEBEB;
+}
+
+.booking__loader {
+    position: absolute;
+    height: 109.5vh;
+    width: 100vw;
+}
+
+.booking__cancel__button {
+    margin-top: 16px;
+
+    cursor: pointer;
+    border: 1px solid #BFC4C9;
+    width: 416px;
+    height: 52px;
+    background: #fff;
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #363636;
+}
+
+@media only screen and (max-width: 400px) {
+    .booking__button {
+        margin-top: 24px;
+    
+        width: 256px;
+        height: 40px;
+
+    }
+
+    .booking__cancel__button {
+        margin-top: 24px;
+    
+        width: 256px;
+        height: 40px;
+
+    }
+}

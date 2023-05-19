@@ -1,0 +1,327 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+
+.header__menu__open {
+    box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 1110px;
+    height: 58px;
+}
+
+.container__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 58px;
+    margin-right: 185px;
+}
+
+.header__title {
+    padding: 9px 0;
+    /* margin-right: 435px; */
+
+    color: #363636;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.1px;
+}
+
+.header__user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header__user__text {
+    display: flex;
+    margin-right: 16px;
+    padding: 20px 0;
+    color: #363636;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+
+.header__user__logo {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menu__profile {
+    width: 270px;
+    height: 152px;
+    position: absolute;
+    top: 77px;
+    right: 0;
+
+    background: #FFFFFF;
+
+    box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.menu__profile__inner {
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger__menu {
+    z-index: 100;
+    display: none;
+}
+
+.nav__burger__container {
+    display: none;
+}
+
+.nav__user {
+    border-top: 1px solid #BFC4C9;
+    margin-top: 52px;
+    padding: 32px;
+    padding-bottom: 52px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__profile {
+    margin-bottom: 42px;
+}
+
+.nav__exit {
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+.nav__exit__menu {
+    border: none;
+    background: none;
+    text-align: right;
+}
+
+.nav__profile__menu {
+    margin-bottom: 32px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1130px) { 
+
+    .header__logo {
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav__burger__container {
+        z-index: 100;
+        margin-top: 90px;
+        width: 502px;
+        
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+
+        background-color: #F9F9FA;
+        box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+        border-radius: 10px;
+    }
+
+    .nav__burger__container__inner {
+        padding: 32px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        padding-bottom: 22px;
+    }
+
+    .container {
+        width: 640px;
+        height: 40px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__user {
+        display: none;
+    }
+
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 2.67px;
+        width: 32px;
+        height: 32px;
+      
+        cursor: pointer;
+    }
+    
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        border-radius: 5px;
+        width: 26.67px;
+        height: 2.67px;
+    
+        background-color: #363636;
+    
+        transition-duration: .25s;
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -7.33px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 7.33px;
+    }
+
+    .hamburger__menu {
+        display: flex;
+        margin-right: 24px;
+    }
+
+    #menu__toggle {
+        cursor: pointer;
+        position: absolute;
+        margin: 0;
+        width: 32px;
+        height: 32px;
+        padding: 2.67px;
+        z-index: 2;
+        opacity: 0;
+    }
+      
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .nav__burger__container {
+        margin-top: 76px;
+        width: 288px;
+    }
+
+    .nav__burger__container__inner {
+        padding: 32px 16px 32px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__user {
+        border-top: 1px solid #BFC4C9;
+        margin-top: 52px;
+        padding: 32px 16px;
+        padding-bottom: 52px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .container {
+        width: 288px;
+        height: 28px;
+    }
+
+    .header__title {
+        padding: 0 0;
+        /* margin-right: 435px; */
+    
+        color: #363636;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.1px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__user {
+        display: none;
+    }
+
+    .menu__btn {
+        padding: 2px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        width: 20px;
+        height: 2px;
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -6px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 6px;
+    }
+
+    #menu__toggle {
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+    }
+      
+}

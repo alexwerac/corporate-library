@@ -1,0 +1,140 @@
+.alert {
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.success__alert {
+    margin-top: 64px;
+    height: 80px;
+    width: 1110px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 5px;
+    background-color: #EBF9F1;
+    background: #EBF9F1;
+    border: 3px solid #00CA71;
+}
+
+.error__alert {
+    margin-top: 64px;
+    height: 80px;
+    width: 1110px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 5px;
+    background-color: rgb(254, 235, 234);
+    background: #FEEBEA;
+    border: 3px solid #F42C4F;
+}
+
+.alert__inner {
+    width: 100%;
+    margin-left: 32px;
+    margin-right: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.alert__inner__left {
+    display: flex;
+    flex-direction: row;
+}
+
+.alert__text {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.alert__button {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.alert__img {
+    height: 32px;
+    width: 32px; 
+}
+
+@media only screen and (max-width: 1000px) {
+    .success__alert {
+        margin-top: 62px;
+        height: 72px;
+        width: 640px;
+    }
+
+    .error__alert {
+        margin-top: 62px;
+        height: 72px;
+        width: 640px;
+    }
+
+    .alert__text {
+        margin-left: 12px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .alert__inner {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .alert__button {
+        width: 16px;
+        height: 16px;
+    }
+
+    .alert__img {
+        height: 24px;
+        width: 24px; 
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .success__alert {
+        margin-top: 56px;
+        height: 78px;
+        width: 280px;
+    }
+
+    .error__alert {
+        margin-top: 56px;
+        height: 78px;
+        width: 280px;
+    }
+
+    .alert__text {
+        width: 220px;
+        margin-left: 12px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+}

@@ -1,0 +1,23 @@
+.category__no__books {
+    margin-top: 200px;
+    color: #A7A7A7;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .category__no__books {
+        margin-top: 226px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .category__no__books {
+        margin-top: 134px;
+        font-size: 18px;
+        line-height: 28px
+    }
+}

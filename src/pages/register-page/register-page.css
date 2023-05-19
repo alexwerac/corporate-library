@@ -1,0 +1,167 @@
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+}
+
+.register__container {
+    width: 528px;
+    height: 492px;
+    
+    background: #fff;
+    border-radius: 16px;
+}
+
+.register__container__inner {
+    padding: 48px 56px;
+}
+
+.company__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.1px;
+    
+    color: #fff;
+    margin-bottom: 46px;
+}
+
+.register__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: rgba(54, 54, 54, 1); 
+    
+    margin-bottom: 8px;
+}
+
+.register__stage { 
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: rgba(54, 54, 54, 1); 
+
+    margin-bottom: 32px;
+}
+
+.register__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register__stage__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.register__input__container {
+    position: relative;
+}
+
+.register__input {
+    outline: none;
+    height: 56px;
+    width: 416px;
+    background: #F9F9FA;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #BFC4C9;
+    padding: 12px;
+    padding-top: 26px;
+}
+
+.floating-label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+
+    position: absolute;
+	pointer-events: none;
+	top: 19px;
+	left: 12px;
+    transition: 0.2s ease all;
+}
+
+input:focus + .floating-label,
+input:not(:placeholder-shown):not(:focus):valid + .floating-label,
+input:read-only + .floating-label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #A7A7A7;
+
+    top: 6px;
+}
+
+.register__input__top {
+    margin-bottom: 36px;
+}
+
+.register__input__bot {
+    margin-bottom: 20px;
+}
+
+.register__button {
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+    border-radius: 30px;
+    height: 52px;
+    width: 416px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+
+.register__input__validation {
+    position: absolute;
+    top: 57px;
+    left: 12px;
+    color:#F42C4F;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.register__input__gr {
+    position: absolute;
+    top: 57px;
+    left: 12px;
+    color:#A7A7A7;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-align: left;
+}
+
+.act {
+    color:#F42C4F;
+}
+
+.pass {
+    color:#A7A7A7;
+}
+
+.checkmark__view {
+    position: absolute;
+    top: 19px;
+    right: 44px;
+}
